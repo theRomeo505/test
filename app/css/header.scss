@@ -1,0 +1,85 @@
+header{
+	background: url('../images/water.jpg') no-repeat center center;
+	position: relative;
+}
+i{
+	transition: 0.2s;
+}
+.left{
+	float: left;
+	z-index: 5;
+	position: absolute;
+	.icons{
+		margin-top: 30px;
+		margin-left: 30px;
+	}
+	.icons-item{
+		display: inline-block;
+		color: white;
+		margin-left: 15px;
+		font-size: 30px;
+		cursor: pointer;
+	}
+	i:hover{
+		color: #4e8839;
+	}
+}
+.right{
+	float: right;
+	padding-top: 18px;
+	position: absolute;
+	right: 50px;
+	z-index: 5;
+	.burger{
+		cursor: pointer;
+	}
+	i{
+		background: white;
+		width: 40px;
+		height: 5px;
+		border-radius: 20px;
+		display: block;
+		line-height: 1;
+		color: white;
+		margin-top: 10px;
+	}
+}
+.header-photo,header-img--b{
+	display: block;
+	text-align: center;
+}
+.header-img{
+	margin-top: 153px;
+}
+
+.main-header-text{
+	
+  font-size: 35px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.171;
+  text-align: center;
+ color: white;
+	margin-top: 20px;
+}
+
+.sec-header-text{
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  text-align: center;
+	margin-bottom: 220px;
+  }
+.header-photo{
+	position: relative;
+}
+.arrow{
+	position: absolute;
+	top: 510px;
+	left: 50%;
+	transform: translateX(-50%);
+	cursor: pointer;
+	z-index: 5;
+}
+

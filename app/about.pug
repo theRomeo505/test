@@ -1,0 +1,89 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title About
+		meta(content="width=device-width, initial-scale=1")
+		link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+		
+		link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+		link(rel='stylesheet' href="css/about.css")
+		link(rel='stylesheet' href="css/header.css")
+		link(rel='stylesheet' href="css/common.css")
+	body
+		.wrapper
+			.content
+				include header
+					block main-header-text
+						h1.main-header-text Владимир Астахов
+					block sec-header-text
+						h6.sec-header-text Личный сайт веб разработчика
+					block arrow
+						img(src='images/arrow_down.svg').arrow
+				section.sec1.clearfix
+					.sec1-l.clearfix
+						svg.triangle-l(viewbox="0 0 1400 200" preserveAspectRatio="none" fill='#ebefe2')
+							polygon(points='0,0 0,200 1400,200')
+						.sec1-l-l
+							h2.about.under Обо мне
+						.sec1-l-r
+							img(src='images/man-sq.png').about-ph
+							h3.under.who Кто я
+							p.about-t Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. <br>	Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+					.sec1-r
+						svg.triangle-r(viewbox="0 0 1400 200" preserveAspectRatio="none" fill='#f4f5f0')
+							polygon(points='0,200 1400,200 1400,0')
+						h2.under.canido Чем я могу быть <br>вам полезен
+						p.canid Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+						h6.type FrontEnd
+						ul.front
+							li 
+								p HTML5
+								
+								svg(viewbox='0 0 110 110').circle
+									circle.circle1(cx='50%' cy='50%' r='45' transform='rotate(-90 55 55)')
+							li 
+								p CSS3
+								svg(viewbox='0 0 110 110').circle
+									circle.circle2(cx='50%' cy='50%' r='45' transform='rotate(-90 55 55)')
+							li 
+								p JavaScript & jQuery
+								svg(viewbox='0 0 110 110').circle
+									circle.circle3(cx='50%' cy='50%' r='45' transform='rotate(-90 55 55)')
+						h6.type BackEnd
+						ul.back
+							li 
+								p PHP
+								svg(viewbox='0 0 110 110').circle
+									circle.circle4(cx='50%' cy='50%' r='45' transform='rotate(-90 55 55)')
+							li 
+								p mySQL
+								svg(viewbox='0 0 110 110').circle
+									circle.circle5(cx='50%' cy='50%' r='45' transform='rotate(-90 55 55)')
+							li 
+								p Node.js <br>& npm
+								svg(viewbox='0 0 110 110').circle
+									circle.circle6(cx='50%' cy='50%' r='45' transform='rotate(-90 55 55)')
+							li 
+								p mongo.db
+								svg(viewbox='0 0 110 110').circle
+									circle.circle7(cx='50%' cy='50%' r='45' transform='rotate(-90 55 55)')
+						h6.type WorkFlow
+						ul.workf
+							li 
+								p Git
+								svg(viewbox='0 0 110 110').circle
+									circle.circle8(cx='50%' cy='50%' r='45' transform='rotate(-90 55 55)')
+							li 
+								p Gulp
+								svg(viewbox='0 0 110 110').circle
+									circle.circle9(cx='50%' cy='50%' r='45' transform='rotate(-90 55 55)')
+							li 
+								p Bower
+								svg(viewbox='0 0 110 110').circle
+									circle.circle10(cx='50%' cy='50%' r='45' transform='rotate(-90 55 55)')
+				section.sec2
+					
+		script(src="./js/libs.js")
+		script(src='./js/all.js')
+		

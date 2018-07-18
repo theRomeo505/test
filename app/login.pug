@@ -1,0 +1,61 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title About
+		meta(content="width=device-width, initial-scale=1")
+		link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+		
+		title Login
+		
+		
+		link(rel='stylesheet' href="css/common.css")
+		link(rel='stylesheet' href='css/welcome.css')
+		link(rel='stylesheet' href='css/login.css')
+	body
+		.contnt
+			.hello
+				.main
+					
+					h1.login Авторизуйтесь
+					form
+						
+						input(type='text' placeholder='Логин')#log
+						label(for='log').log 
+							i.fa.fa-user(aria-hidden="true")
+
+						
+									
+						div
+							input(type='password' placeholder='Пароль')#pas
+							label(for='pas').pas 
+								i.fa.fa-key
+						
+						input(type='checkbox')#check
+						label(for='check') Я человек
+							.check
+								span.checked 
+									i.fa.fa-check
+						
+						p.robot Вы точно не робот?
+						input(type='radio' name='robot')#radio1
+						label(for='radio1') Да
+							.rradio1
+								svg(height='8px' width='8px').circle1
+									circle(cx='4px' cy='4px' r='4px' fill='#6c9c5a')
+						input(type='radio' name='robot')#radio2
+						label(for='radio2') Не уверен
+							.rradio2
+								svg(height='8px' width='8px').circle2
+									circle(cx='4px' cy='4px' r='4px' fill='#6c9c5a')
+									
+					
+				.footer
+					a(href='#').foot-a На главную
+					a(href='#').foot-a Войти
+					
+			footer
+				p.foot-p © Владимир Астахов | создано с любовью в LoftSchool | 2016
+		script(src='./js/libs.js')
+		script(src='./js/all.js')
+		

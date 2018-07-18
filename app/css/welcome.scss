@@ -1,0 +1,140 @@
+body{
+	background: url(../images/water.jpg) no-repeat center center;
+	text-align: center;
+	padding-bottom: 200px;
+}
+.hello{
+	width: 380px;
+	height: 400px;
+	display: inline-block;
+  border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+  background-color: rgba(18, 38, 32,0.6);
+position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.photo{
+border-radius: 50%;
+margin-top: 40px;}
+.buton{
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 2.257;
+  text-align: center;
+  
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+border-radius: 20px;
+padding: 2px;
+ padding-left: 20px;
+	padding-right: 20px;
+	transition: 0.2s;
+}
+.buton:hover{
+	background: #639156;
+	border: #639156;
+	padding: 3px;
+	padding-right: 21px;
+	padding-left: 21px;
+}
+.name{
+
+  font-size: 28px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.214;
+  text-align: center;
+  
+
+}
+.about{
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+  text-align: center;
+font-weight: lighter;
+
+}
+i{
+	color: #8e9c97;
+	
+}
+
+li{
+	margin: 20px;
+	display: inline-block;
+	font-size: 30px;
+}
+li:hover i{
+	color: #5f8d53;
+}
+.foot-a{
+	background: #5f8d53;
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 2.25;
+  text-align: center;
+ width: 126px;
+	display: inline-block;
+	border-right: 1px solid rgba(222, 227, 231,0.5);;
+  
+  transition: 0.2s;
+}
+
+
+.foot-a:last-child{
+	border-right: none;
+}
+.foot-a:hover{
+	background: #497f39;
+}
+.footer{
+	display: block;
+	margin-top: 33px;
+}
+.foot-p{
+
+  font-size: 15.771px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 2;
+  text-align: center;
+width: 100%;
+
+}
+footer{
+	position: absolute;
+	bottom: -150px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+@media (max-width: 768px)
+{
+	.hello{
+		top: 60%;
+	}
+	
+}
+@media (max-width: 576px)
+{
+	.buton{
+		right: 50%;
+		transform: translateX(50%);
+	}
+	.hello{
+		width: 299px;
+	}
+	.foot-a
+	{
+		width: 99px;
+	}
+}
