@@ -1,0 +1,65 @@
+extends layout.pug
+block page
+	.contnt
+		a(href='#').login-buton.hello-active.login-buton-m  Авторизоваться
+		.hello.hello-active
+			.main
+				img.photo(src='images/man.png')
+				h1.name Владимир Астахов
+				h5.index-about Личный сайт веб разработчика
+				ul.icons
+					li.icons-item 
+						a(href='#')
+							i.fa.fa-vk
+					li.icons-item
+						a(href='#') 
+							i.fa.fa-github-alt
+					li.icons-item
+						a(href='#') 
+							i.fa.fa-vk
+			.index-footer
+				a(href='#').index-foot-a Мои работы
+				a(href='#').index-foot-a Обо мне
+				a(href='#').index-foot-a Блог
+		.hello2
+				.main
+					
+					h1.login Авторизуйтесь
+					form
+						
+						input(type='text' placeholder='Логин')#log
+						label(for='log').log 
+							i.fa.fa-user.white(aria-hidden="true")
+
+						
+									
+						div
+							input(type='password' placeholder='Пароль')#pas
+							label(for='pas').pas 
+								i.fa.fa-key.white
+						
+						input(type='checkbox')#log-check
+						label(for='log-check') Я человек
+							.log-check
+								span.log-checked
+									i.fa.fa-check
+						
+						p.robot Вы точно не робот?
+						input(type='radio' name='robot')#radio1
+						label(for='radio1') Да
+							.rradio1
+								svg(height='8px' width='8px').log-circle1
+									circle(cx='4px' cy='4px' r='4px' fill='#6c9c5a')
+						input(type='radio' name='robot')#radio2
+						label(for='radio2') Не уверен
+							.rradio2
+								svg(height='8px' width='8px').log-circle2
+									circle(cx='4px' cy='4px' r='4px' fill='#6c9c5a')
+									
+					
+				.log-footer
+					a(href='#').login-foot-a.login-buton-m На главную
+					a(href='#').login-foot-a Войти
+			
+	footer.in-footer
+		p.index-foot-p © Владимир Астахов | создано с любовью в LoftSchool | 2016
