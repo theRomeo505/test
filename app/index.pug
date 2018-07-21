@@ -30,14 +30,17 @@ block page
 						input(type='text' placeholder='Логин')#log
 						label(for='log').log 
 							i.fa.fa-user.white(aria-hidden="true")
-
+							.non-log-t
+							.non-log Ви не ввели логин
+						
 						
 									
-						div
-							input(type='password' placeholder='Пароль')#pas
-							label(for='pas').pas 
-								i.fa.fa-key.white
 						
+						input(type='password' placeholder='Пароль')#pas
+						label(for='pas').pas 
+							i.fa.fa-key.white
+							.non-pas-t
+							.non-pas Ви не ввели password
 						input(type='checkbox')#log-check
 						label(for='log-check') Я человек
 							.log-check
@@ -55,11 +58,9 @@ block page
 							.rradio2
 								svg(height='8px' width='8px').log-circle2
 									circle(cx='4px' cy='4px' r='4px' fill='#6c9c5a')
-									
-					
-				.log-footer
-					a(href='#').login-foot-a.login-buton-m На главную
-					a(href='#').login-foot-a Войти
+						.log-footer
+							a(href='#').login-foot-a.login-buton-m На главную
+							button(type='submit' href='#').login-foot-a.login-log Войти
 			
 	footer.in-footer
 		p.index-foot-p © Владимир Астахов | создано с любовью в LoftSchool | 2016

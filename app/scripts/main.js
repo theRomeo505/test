@@ -6,9 +6,9 @@ $(document).ready(function(){
 	},1000);
 });
 	
-	$('#check').on('click',function(){
+	$('#log-check').on('click',function(){
 		console.log('l');
-		$('.check').toggleClass('active');
+		$('.log-check').toggleClass('active-check');
 	})
 	$("input[type=radio]").on('click',function(){
 		
@@ -19,8 +19,57 @@ $(document).ready(function(){
 		labels[i].removeClass('activerb');
 		
 		$("label[for="+id+"]").addClass('activerb');
-	})	
-	
+	})
+	$('.login-buton-m').on('click',function(){
+		
+		$('.hello').toggleClass('hello-active');
+		$('.hello2').toggleClass('hello-active');
+		$('.login-buton').toggleClass('hello-active');
+		
+		
+	});
+	$('.login-log').on('click',function(){
+	$('.non-log').removeClass('lnone');
+			
+			$('.non-log-t').removeClass('lnone');
+		$('.non-pas').removeClass('pnone');
+			
+			$('.non-pas-t').removeClass('pnone');
+		if ($('#log').val()=='')
+			{
+				$('form').addClass('inc-log')
+				$('form').removeClass('c-log')
+
+			}else{
+				
+				$('form').addClass('c-log')
+				$('form').removeClass('inc-log')
+			}
+		if ($('#pas').val()=='')
+			{
+			$('form').addClass('inc-pas')
+				$('form').removeClass('c-pas')
+
+			}else{
+				$('form').addClass('c-pas')
+				$('form').removeClass('inc-pas')
+			}
+		
+	});
+	$('#log').on('click',function(){
+		if ($('form').hasClass('inc-log')){
+			$('.non-log').addClass('lnone');
+			
+			$('.non-log-t').addClass('lnone');
+		}
+	});
+	$('#pas').on('click',function(){
+		if ($('form').hasClass('inc-pas')){
+			$('.non-pas').addClass('pnone');
+			
+			$('.non-pas-t').addClass('pnone');
+		}
+	});
 })
 
 
