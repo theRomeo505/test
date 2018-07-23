@@ -194,3 +194,27 @@ body {
 	}
 }
 
+@media(max-width: 576px){
+	.f-r,.f-m,.f-l,.q-autor{
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		position: relative;
+		z-index: 20;
+	}
+	.f-l-t{
+		text-align: center;
+		display: inline-block;
+	}
+	.f-l:after{
+		content: '';
+		width: 90%;
+		left: 5%;
+		top: 68px;
+		height: 3px;
+		border-radius: 5px;
+		color: #888d8f;
+		position: absolute;
+		z-index: 100;
+	}
+}
