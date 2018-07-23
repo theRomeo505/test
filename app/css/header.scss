@@ -2,35 +2,38 @@ header{
 	background: url('../images/water.jpg') no-repeat center center;
 	position: relative;
 }
-i{
+header i{
 	transition: 0.2s;
 }
-.left{
+.header-left{
 	float: left;
 	z-index: 5;
 	position: absolute;
-	.icons{
-		margin-top: 30px;
+	.header-icons{
+	
 		margin-left: 30px;
 	}
-	.icons-item{
+	.header-icons-item{
 		display: inline-block;
 		color: white;
 		margin-left: 15px;
 		font-size: 30px;
 		cursor: pointer;
+		i{
+			color: white;
+		}
 	}
 	i:hover{
 		color: #4e8839;
 	}
 }
-.right{
+.header-right{
 	float: right;
 	padding-top: 18px;
 	position: absolute;
 	right: 50px;
 	z-index: 5;
-	.burger{
+	.header-burger{
 		cursor: pointer;
 	}
 	i{
@@ -52,25 +55,7 @@ i{
 	margin-top: 153px;
 }
 
-.main-header-text{
-	
-  font-size: 35px;
-  font-family: "Roboto";
-  color: rgb(255, 255, 255);
-  line-height: 1.171;
-  text-align: center;
- color: white;
-	margin-top: 20px;
-}
 
-.sec-header-text{
-  font-size: 16px;
-  font-family: "Roboto";
-  color: rgb(255, 255, 255);
-  line-height: 1.5;
-  text-align: center;
-	margin-bottom: 220px;
-  }
 .header-photo{
 	position: relative;
 }
@@ -83,3 +68,79 @@ i{
 	z-index: 5;
 }
 
+
+.burger-active .menu-burger{
+	display: block;
+}
+.menu-burger{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(126,168,109,0.9);
+	z-index: 20;
+	//overflow-y: hidden;
+	padding-top: 100px;
+	box-sizing: border-box;
+	display: none;
+}
+.menu-burger-a{
+  font-size: 63px;
+  font-family: "SansusWebissimo";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 0.381;
+  text-align: center;
+display: block;
+	margin-top: 100px;
+	position: relative;
+}
+.menu-burger-a:hover:after,.content-blog .burger2:after{
+	content: '';
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 50%;
+	transform: translateX(-50%);
+	top: 70px;
+  width: 89px;
+  height: 3px;
+
+}
+.menu-burger-close{
+	display: inline-block;
+	position: fixed;
+	right: 50px;
+	top: 15px;
+	height: 50px;
+	width: 50px;
+}
+.close-r{
+	
+  background-color: rgb(252, 252, 252);
+  position: absolute;
+  top: 28px;
+  width: 50px;
+  height: 3px;
+	transform: rotate(45deg);
+  z-index: 64;
+}
+
+
+.close-l{
+ background-color: rgb(252, 252, 252);
+  position: absolute;
+  top: 28px;
+  width: 50px;
+  height: 3px;
+	transform: rotate(-45deg);
+  z-index: 64;
+}
+	@media(max-width: 576px){
+		.header-left .header-icons{
+			margin-left: 0;
+		}
+		.header-right{
+			right: 75px;
+		}
+}
