@@ -37,6 +37,7 @@ left: 50%;
 position: absolute;
 	margin-bottom: 20px;
 	left: 0;
+	
 }
 .blog-r-tr{
 	left: 50%;
@@ -143,15 +144,23 @@ vertical-align: middle;
 .fix .blog-r{
 		margin-left: 30%;
 	}
-.arrow{
-	display: none;
-	position: absolute;
-	bottom: 20px;
-}
+
 .blog footer{
 	background: #81aa70;
 	padding: 5px;
 }
+.mobile-button{
+	display: none;
+	position: fixed;
+	
+	top: 50%;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	background: #4e8839;
+	transform: translate(-78%,-50%);
+}
+
 @media(max-width: 992px)
 {
 	.blog .blog-sidebar{
@@ -176,9 +185,7 @@ vertical-align: middle;
 	.fix .blog-r{
 		margin-left: 5%;
 	}
-	.arrow{
-		display: inline-block;
-	}
+	
 	.blog .blog-r{
 		width: 90%;
 		margin-left: 5%;
@@ -197,12 +204,20 @@ vertical-align: middle;
 @media(max-width:576px){
 
 .blog-l-tr,.blog-r-tr{
-		transform: translateY(-80%);
+		transform: translateY(-75%);
 	}
 	.blog-article:after{
-		width: 250px;
+		width: 90%;
+		left: 5%;
 	}
-	.footer .f-r,.f-m,.f-l{
-		width: 100%;
+	.blog .blog-r{
+		width: 89%;
+		margin-left: 5%;
+		margin-right: 0%;
 	}
+	.blog .mactive{
+	display: inline-block;
+}
+	.menu-burger .menu-burger-close{
+right: 30px;}
 }

@@ -59,15 +59,28 @@ header i{
 .header-photo{
 	position: relative;
 }
-.arrow{
+.arrow,.arrow2{
 	position: absolute;
-	top: 510px;
 	left: 50%;
 	transform: translateX(-50%);
 	cursor: pointer;
-	z-index: 5;
-}
+	z-index: 29;
 
+	//display: inline-block;
+
+	bottom: 20px;
+	top: 133%;
+
+}
+.arrow:hover{
+	display: none;
+}
+.arrow:hover .arrow2{
+	//display: inline-block;
+}
+.arrow2{
+	display: none;
+}
 
 .burger-active .menu-burger{
 	display: block;
@@ -80,8 +93,7 @@ header i{
 	left: 0;
 	background: rgba(126,168,109,0.9);
 	z-index: 20;
-	//overflow-y: hidden;
-	padding-top: 100px;
+	//padding-top: 100px;
 	box-sizing: border-box;
 	display: none;
 }
@@ -90,22 +102,31 @@ header i{
   font-family: "SansusWebissimo";
   color: rgb(255, 255, 255);
   text-transform: uppercase;
-  line-height: 0.381;
+  line-height: 2.381;
   text-align: center;
-display: block;
-	margin-top: 100px;
-	position: relative;
-}
-.menu-burger-a:hover:after,.content-blog .burger2:after{
-	content: '';
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  left: 50%;
+display: inline-block;
+	margin-left: 50%;
 	transform: translateX(-50%);
-	top: 70px;
-  width: 89px;
-  height: 3px;
+	margin-top: 40px;
+	position: fixed;
+}
+.menu-burger-a:hover,.content-blog .burger2{
+	
+  border-bottom :3px solid rgb(255, 255, 255);
 
+
+}
+.burger1{
+	top: 0%
+}
+.burger2{
+	top: 23%;
+}
+.burger3{
+	top: 46%; 
+}
+.burger4{
+	top: 69%; 
 }
 .menu-burger-close{
 	display: inline-block;
@@ -136,11 +157,18 @@ display: block;
 	transform: rotate(-45deg);
   z-index: 64;
 }
-	@media(max-width: 576px){
+
+
+@media(max-width: 576px){
 		.header-left .header-icons{
 			margin-left: 0;
 		}
-		.header-right{
-			right: 75px;
+		.menu-burger-a{
+			font-size: 40px;
+
 		}
+	.menu-burger{
+		padding-top: 0;
+	}
+		
 }

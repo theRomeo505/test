@@ -7,8 +7,11 @@ $(document).ready(function () {
 		
 		if (window.scrollY > 715) {
 			$('main.blog').addClass('fix');
+			
+			$('.mobile-button').addClass('mactive');
 		} else {
 			$('main.blog').removeClass('fix');
+			$('.mobile-button').removeClass('mactive');
 		}
 
 		$('.blog-sd-i').removeClass('sdactive');
@@ -24,10 +27,14 @@ $(document).ready(function () {
 	}
 	$('.header-burger').on('click',function(){
 		$('body').addClass('burger-active');
-		$('body').attr('scroll')='no';
 	});
-	$('.menu-burger-close').on('click',function(){
+	$('.mobile-button').on('click',function(event){
+		event.preventDefault();
+		$('body').addClass('burger-active');
+	});
+	$('.menu-burger-close').on('click',function(event){
+		event.preventDefault();
 		$('body').removeClass('burger-active');
-		$('body').attr('scroll')='no';
+		
 	});
 })

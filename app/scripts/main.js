@@ -1,9 +1,9 @@
 $(document).ready(function(){
 	$('.arrow').on('click',function(){
 		
-	$('html','body').animate({
-		scrollTop: $('.who').offset().top
-	},1000);
+	$('html,body').animate({
+		scrollTop:  $('.blog').offset().top
+	},300);
 });
 	
 	$('#log-check').on('click',function(){
