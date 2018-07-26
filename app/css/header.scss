@@ -59,28 +59,23 @@ header i{
 .header-photo{
 	position: relative;
 }
-.arrow,.arrow2{
+.arrow{
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 	cursor: pointer;
-	z-index: 29;
+	z-index: 6;
 
 	//display: inline-block;
 
 	bottom: 20px;
 	top: 133%;
-
+transition: 0.2s;
 }
 .arrow:hover{
-	display: none;
+	opacity: 0.8;
 }
-.arrow:hover .arrow2{
-	//display: inline-block;
-}
-.arrow2{
-	display: none;
-}
+
 
 .burger-active .menu-burger{
 	display: block;
@@ -110,7 +105,7 @@ display: inline-block;
 	margin-top: 40px;
 	position: fixed;
 }
-.menu-burger-a:hover,.content-blog .burger2{
+.menu-burger-a:hover,.content-blog .burger2,.content-works .burger1{
 	
   border-bottom :3px solid rgb(255, 255, 255);
 

@@ -1,0 +1,63 @@
+extends layout
+block variables
+	-var bodyClass = 'body-works'
+block page
+	.content.content-works
+		include burger-menu
+		include header
+			block main-header-text
+				h1.main-header-text-works Владимир Астахов
+			block sec-header-text
+				h5.sec-header-text-blog  Личный сайт веб разработчика
+			block arrow
+				img(src='images/arrow_down.svg').arrow
+		main.works
+			section.sec-works
+				.blog-l-tr
+					svg.blog-triangle-l(viewbox="0 0 1400 200" preserveAspectRatio="none" fill='white')
+						polygon(points='0,0 0,200 1500,200')
+				.blog-r-tr
+					svg.blog-triangle-r(viewbox="100 0 1400 200" preserveAspectRatio="none" fill='white')
+						polygon(points='0,200 1500,200 1500,0')
+				.work-header
+					p.work-header-p Мои роботы
+				.works-items
+					.work-items-l
+						.work-item-l.work-item-active
+							p.work-item-title Сайт школы онлайн Образования
+							p.work-item-sec HTML , CSS, JAVASCRIPT
+							a(href='#').watch-but 
+								i.fa.fa-link <nbsp> <nbsp> Посмотреть сайт
+						.work-item-l
+							p.work-item-title  Сайт 
+							p.work-item-sec HTML
+							a(href='#').watch-but 
+								i.fa.fa-link <nbsp> <nbsp> Посмотреть сайт
+						.work-item-l
+							p.work-item-title школы онлайн 
+							p.work-item-sec JAVASCRIPT
+							a(href='#').watch-but 
+								i.fa.fa-link <nbsp> <nbsp> Посмотреть сайт
+						.work-item-l
+							p.work-item-title Образования
+							p.work-item-sec CSS
+							a(href='#').watch-but 
+								i.fa.fa-link <nbsp> <nbsp> Посмотреть сайт
+					.work-items-r
+						img(src='images/work-1.png').work-img.work-img-active
+						img(src='images/work-2.png').work-img.work-img-l
+						img(src='images/work-3.png').work-img.work-img-r
+						img(src='images/work-4.png').work-img
+						a(href="")
+							i.fa.fa-chevron-up
+						a(href='#')
+							i.fa.fa-chevron-down
+			section.sec-about-me
+				p.aboutme-p
+				.feedbacks
+					.feedback1
+					.feedback2
+				form
+				
+			include footer1
+		include footer2
