@@ -16,6 +16,8 @@ block page
 					polygon(points='0,0 0,200 1400,200')
 			svg.triangle-r(viewbox="0 0 1400 200" preserveAspectRatio="none" fill='#f4f5f0')
 					polygon(points='0,200 1400,200 1400,0')
+			a(href='').mobile-button
+
 			.sec1-l.clearfix
 				
 				.sec1-l-l
@@ -74,6 +76,21 @@ block page
 						p Bower
 						svg(viewbox='0 0 110 110').circle
 							circle.circle10(cx='50%' cy='50%' r='45' transform='rotate(-90 55 55)')
-		section#map
+		section#map-sec
+			#map
+			.contacts-map
+				h2.contacts-h Contacts
+				a(href='skypeto:') 
+					i.fa.fa-skype 
+					span skype
+				a(href='mailto:') 
+					i.fa.fa-envelope 
+					span uyf@gmail.com
+				a(href='telto:') 
+					i.fa.fa-phone 
+					span +380675666856
+				a(href='#') 
+					img(src='images/map_marker.png') 
+					span Шевченка 5
 		include footer1
 	include footer2
