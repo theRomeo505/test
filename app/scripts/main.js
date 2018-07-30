@@ -1,8 +1,41 @@
+ var map;
+      function initMap() {
+		 map = new 
+	   google.maps.Map($('#map'), {
+		
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+
+
 $(document).ready(function(){
-	$('.arrow').on('click',function(){
+	
+	
+	
+	$('.arrow1').on('click',function(){
 		
 	$('html,body').animate({
 		scrollTop:  $('.blog').offset().top
+	},300);
+});
+		$('.arrow2').on('click',function(){
+		
+			
+	$('html,body').animate({
+		scrollTop:  $('.work-header').offset().top
+	},300);
+});$('.arrow-about').on('click',function(){
+		
+			
+	$('html,body').animate({
+		scrollTop:  $('.sec1').offset().top
+	},300);
+});
+	$('.work-up').on('click',function(){
+		console.log('jh');
+	$('html,body').animate({
+		scrollTop:  $('.work-header').offset().top
 	},300);
 });
 	
@@ -82,7 +115,7 @@ $(document).ready(function(){
 				{	r=i;}
 				if (work.eq(i).hasClass('work-img-active'))
 				{a=i;
-				worki.eq(i).removeClass('work-item-active');
+				
 				}
 				if (work.eq(i).hasClass('work-img-l'))
 				{l=i;
@@ -91,13 +124,8 @@ $(document).ready(function(){
 				}
 				
 			}
-		for (var i=0;i<work.length;i++)
-			{
-				if (i!=a && i!=l && i!=r)
-				{f=i;}
-			}
 		
-						worki.eq(l).addClass('work-item-active');
+					worki.eq(a).removeClass('work-item-active');	worki.eq(l).addClass('work-item-active');
 		work.eq(r).removeClass('work-img-r');
 		work.eq(l).removeClass('work-img-l');
 		work.eq(l).addClass('work-img-active');
@@ -105,7 +133,7 @@ $(document).ready(function(){
 		
 		work.eq(a).removeClass('work-img-active');
 		work.eq(a).addClass('work-img-r');
-		work.eq(f).addClass('work-img-l');
+		work.eq(l-1).addClass('work-img-l');
 	});
 	$('.up').on('click',function(e){
 		e.preventDefault();
@@ -115,26 +143,25 @@ $(document).ready(function(){
 				{r=i;}
 				
 				if (work.eq(i).hasClass('work-img-active'))
-				{a=i;worki.eq(i).removeClass('work-item-active');}
+				{a=i;}
 				if (work.eq(i).hasClass('work-img-l'))
 					l=i;
 				
 			}
-		for (var i=0;i<work.length;i++)
-			{
-			if (i!=a && i!=l && i!=r)
-					f=i;
-			}
+		
 		worki.eq(r).addClass('work-item-active');
 		work.eq(r).removeClass('work-img-r');
 		work.eq(l).removeClass('work-img-l');
 		work.eq(r).addClass('work-img-active');
 	
-		
+		worki.eq(a).removeClass('work-item-active');
 		work.eq(a).removeClass('work-img-active');
-		work.eq(f).addClass('work-img-r');
+		if (r+1==lenth)
+			r=-1;
+		work.eq(r+1).addClass('work-img-r');
 		work.eq(a).addClass('work-img-l');
 	});
+	
 })
 
 

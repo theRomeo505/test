@@ -215,8 +215,9 @@ vertical-align: middle;
 		margin-left: 5%;
 		margin-right: 0%;
 	}
-	.blog .mactive{
+	body .mactive{
 	display: inline-block;
+		z-index: 19;
 }
 	.menu-burger .menu-burger-close{
 right: 30px;}

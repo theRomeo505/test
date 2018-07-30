@@ -10,25 +10,28 @@ block page
 			block sec-header-text
 				h5.sec-header-text-blog  Личный сайт веб разработчика
 			block arrow
-				img(src='images/arrow_down.svg').arrow
+				img(src='images/arrow_down.svg').arrow2.arrow
 		main.works
 			section.sec-works
-				.blog-l-tr
+				.blog-l-tr.works-l-tr
 					svg.blog-triangle-l(viewbox="0 0 1400 200" preserveAspectRatio="none" fill='white')
 						polygon(points='0,0 0,200 1500,200')
-				.blog-r-tr
+				.blog-r-tr.works-r-tr
 					svg.blog-triangle-r(viewbox="100 0 1400 200" preserveAspectRatio="none" fill='white')
 						polygon(points='0,200 1500,200 1500,0')
+				a(href='').mobile-button
 				.work-header
 					p.work-header-p Мои роботы
 				.works-items
+					.main-photo-hid
+
 					.work-items-l
-						.work-item-l.work-item-active
+						.work-item-l
 							p.work-item-title Сайт школы онлайн Образования
 							p.work-item-sec HTML , CSS, JAVASCRIPT
 							a(href='#').watch-but 
 								i.fa.fa-link <nbsp> <nbsp> Посмотреть сайт
-						.work-item-l
+						.work-item-l.work-item-active
 							p.work-item-title  Сайт 
 							p.work-item-sec HTML
 							a(href='#').watch-but 
@@ -43,21 +46,43 @@ block page
 							p.work-item-sec CSS
 							a(href='#').watch-but 
 								i.fa.fa-link <nbsp> <nbsp> Посмотреть сайт
+						.work-item-l
+							p.work-item-title Образования knowledge
+							p.work-item-sec cCSS
+							a(href='#').watch-but 
+								i.fa.fa-link <nbsp> <nbsp> Посмотреть сайт
 					.work-items-r
-						img(src='images/work-1.png').work-img.work-img-active
-						img(src='images/work-2.png').work-img.work-img-l
+						img(src='images/work-1.png').work-img.work-img-l
+						img(src='images/work-2.png').work-img.work-img-active
 						img(src='images/work-3.png').work-img.work-img-r
 						img(src='images/work-4.png').work-img
+						img(src='images/work-3.png').work-img
 						a(href="")
 							i.fa.fa-chevron-up.up
 						a(href='')
 							i.fa.fa-chevron-down.down
 			section.sec-about-me
-				p.aboutme-p
+				p.aboutme-p.work-header-p Что обо мне говорят
 				.feedbacks
 					.feedback1
+						img(src='images/person1.png').feed-img
+						p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+						p.work-name Ковальчук Дмитрий
+						p.work-job — основатель Loftschool
 					.feedback2
-				form
+						img(src='images/person2.png').feed-img
+						p Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+						p.work-name Сабанцев Владимир
+						p.work-job — преподаватель
+				
+				form.message
+					h2.login.message-h Связаться со мной
+					input(type='text' placeholder='Имя')#name
+					input(type='email' placeholder='Email')#email
+					textarea(placeholder='Ваше сообщение')#message
+					button(type='submit').index-foot-a.but-subm Отправить
+					button(type='reset').index-foot-a.but-clear Очистить
+				i.fa.fa-chevron-up.work-up.arrow
 				
 			include footer1
 		include footer2
