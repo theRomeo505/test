@@ -15,6 +15,6 @@ $.path.task.forEach(function(taskPath){
 	require(taskPath)();
 });
 
-$.gulp.task('default', $.gulp.series('clean',$.gulp.parallel('sass-min','pug-min','img-min','font'),'js-concat','jslib','csslib',$.gulp.parallel('watch','serve')));
+$.gulp.task('default', $.gulp.series('clean',$.gulp.parallel('sass-min','pug-min','img','font'),'js-concat','jslib','csslib',$.gulp.parallel('watch','serve')));
 
 

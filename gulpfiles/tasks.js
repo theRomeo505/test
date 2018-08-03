@@ -12,5 +12,5 @@ module.exports = [
 	'./gulpfiles/js-min.js',
 	'./gulpfiles/css-libs.js',
 	'./gulpfiles/js-libs.js',
-	
+	'./gulpfiles/img.js',
 ];
