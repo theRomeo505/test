@@ -96,6 +96,12 @@
 $(document).ready(function(){
 	
 	
+	var circle_percent=[0.95,0.9,0.88,0.44,0.55,0.4,0.6,0.8,0.66,0.6],dasharray=45*2*Math.PI;
+	for (var i=0;i<circle_percent.length;i++)
+		{
+			$('.circle').eq(i).css({"stroke-dasharray": circle_percent[i]*dasharray+' '+dasharray,'stroke-opacity': ''+circle_percent[i]});
+			//$('.circle').eq(i).css();
+		}
 	
 	$('.arrow1').on('click',function(){
 		
@@ -137,8 +143,8 @@ $(document).ready(function(){
 		
 		$("label[for="+id+"]").addClass('activerb');
 	})
-	$('.login-buton-m').on('click',function(){
-		
+	$('.login-buton-m').on('click',function(e){
+		e.preventDefault();
 		$('.hello').toggleClass('hello-active');
 		$('.hello2').toggleClass('hello-active');
 		$('.login-buton').toggleClass('hello-active');

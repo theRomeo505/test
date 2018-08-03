@@ -1,7 +1,7 @@
 .body-index{
 	background: url(../images/water.jpg) no-repeat center center;
 	text-align: center;
-	padding-bottom: 200px;
+	
 }
 .hello,.hello2{
 	display: none;
@@ -74,12 +74,12 @@ font-weight: lighter;
 }
 
 
-li{
+.body-index li{
 	margin: 20px;
 	display: inline-block;
 	font-size: 30px;
 }
-li:hover i{
+.body-index li:hover i{
 	color: #5f8d53;
 }
 .index-foot-a,.login-foot-a{
@@ -118,15 +118,17 @@ width: 100%;
 
 }
 .in-footer{
+	display: inline-block;
+	
 	position: absolute;
-	bottom: -150px;
 	left: 50%;
+	bottom: 30px;
 	transform: translateX(-50%);
 }
 @media (max-width: 768px)
 {
 	.hello,hello2{
-		top: 60%;
+	//	top: 60%;
 	}
 	
 }
@@ -456,8 +458,9 @@ left: 145px;
 		left: 100px;
 	}
 	.hello2{
-		top: 60%;
+	//	top: 60%;
 	}
 	.in-footer{
 	width: 100%;
+		bottom: 0;
 	}}

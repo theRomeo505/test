@@ -1,9 +1,9 @@
-extends layout.pug
+extends layout
 block variables
-	-var bodyClass = 'body-index'
+	-var bodyClass='body-index'
 block page
 	.contnt
-		a(href='#').login-buton.hello-active.login-buton-m  Авторизоваться
+		a(href='').login-buton.hello-active.login-buton-m  Авторизоваться
 		.hello.hello-active
 			.main
 				img.photo(src='images/man.png')
@@ -64,5 +64,5 @@ block page
 							a(href='#').login-foot-a.login-buton-m На главную
 							button(type='submit' href='#').login-foot-a.login-log Войти
 			
-	footer.in-footer
-		p.index-foot-p © Владимир Астахов | создано с любовью в LoftSchool | 2016
+footer.in-footer
+	p.index-foot-p © Владимир Астахов | создано с любовью в LoftSchool | 2016

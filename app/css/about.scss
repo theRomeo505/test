@@ -15,6 +15,7 @@ font-weight: lighter;
   color: rgb(255, 255, 255);
   line-height: 1.171;
   text-align: center;
+	margin-top: 17px;
 }
 .sec1-l{
 	width: 50%;
@@ -151,56 +152,7 @@ margin-top: 40px;
 	background: url('../images/map.png') no-repeat center center;
 	background-size: contain;
 }
-.circle1{
-	stroke-dasharray: 260 282.6;
-	stroke-opacity: 0.95;
-	
-}
-.circle1{
-	stroke-dasharray: 240 282.6;
-	stroke-opacity: 0.9;
-	
-}
-.circle3{
-	stroke-dasharray: 249 282.6;
-	stroke-opacity: 0.88;
-	
-}
-.circle4{
-	stroke-dasharray: 129 282.6;
-	stroke-opacity: 0.44;
-	
-}
-.circle5{
-	stroke-dasharray: 150 282.6;
-	stroke-opacity: 0.55;
-	
-}
-.circle6{
-	stroke-dasharray: 100 282.6;
-	stroke-opacity: 0.4;
-	
-}
-.circle7{
-	stroke-dasharray: 160 282.6;
-	stroke-opacity: 0.6;
-	
-}
-.circle8{
-	stroke-dasharray: 220 282.6;
-	stroke-opacity: 0.8;
-	
-}
-.circle9{
-	stroke-dasharray: 180 282.6;
-	stroke-opacity: 0.66;
-	
-}
-.circle10{
-	stroke-dasharray: 170 282.6;
-	stroke-opacity: 0.6;
-	
-}
+
 .circle{
 	position: absolute;
 	top: 0;
@@ -249,6 +201,7 @@ margin-top: 40px;
 		}
 		span{
 			padding-left: 15px;
+			vertical-align: top;
 		}
 
 	}
