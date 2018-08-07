@@ -18,3 +18,4 @@ $.path.task.forEach(function(taskPath){
 $.gulp.task('default', $.gulp.series('clean',$.gulp.parallel('sass-min','pug-min','img','font'),'js-concat','jslib','csslib',$.gulp.parallel('watch','serve')));
 
 
+
