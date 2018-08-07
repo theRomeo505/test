@@ -194,7 +194,7 @@ $(document).ready(function(){
 		}
 	});
 	var work=$('.work-img'),r,l,a,f,worki=$('.work-item-l'),lenth=work.length;
-	$('.work-img-l').on('click',function(e){
+	$('.work-img-ll').on('click',function(e){
 		e.preventDefault();
 		for (var i=0;i<work.length;i++)
 			{
@@ -224,10 +224,9 @@ $(document).ready(function(){
 		work.eq(a).removeClass('work-img-active');
 		work.eq(a).addClass('work-img-r');
 		work.eq(l-1).addClass('work-img-l');
-		work=$('.work-img');
-		worki=$('.work-item-l');
+		
 	});
-	$('.work-img-r').on('click',function(e){
+	$('.work-img-rr').on('click',function(e){
 		e.preventDefault();
 		for (var i=0;i<work.length;i++)
 			{
@@ -252,8 +251,7 @@ $(document).ready(function(){
 			r=-1;
 		work.eq(r+1).addClass('work-img-r');
 		work.eq(a).addClass('work-img-l');
-		work=$('.work-img');
-		worki=$('.work-item-l');
+		
 	});
 	
 })

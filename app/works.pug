@@ -19,7 +19,6 @@ block page
 				.blog-r-tr.works-r-tr
 					svg.blog-triangle-r(viewbox="100 0 1400 200" preserveAspectRatio="none" fill='white')
 						polygon(points='0,200 1500,200 1500,0')
-				a(href='').mobile-button
 				.work-header
 					p.work-header-p Мои роботы
 				.works-items
@@ -58,6 +57,8 @@ block page
 						img(src='images/work-4.png').work-img
 						img(src='images/work-3.png').work-img
 						
+						img(src='images/work-4.png').work-img-rr
+						img(src='images/work-3.png').work-img-ll
 						i.fa.fa-chevron-up.up
 						
 						i.fa.fa-chevron-down.down
@@ -79,7 +80,7 @@ block page
 					h2.login.message-h Связаться со мной
 					input(type='text' placeholder='Имя')#name
 					input(type='email' placeholder='Email')#email
-					textarea(placeholder='Ваше сообщение')#message
+					textarea(placeholder='Ваше сообщение')#message.message-m
 					button(type='submit').index-foot-a.but-subm Отправить
 					button(type='reset').index-foot-a.but-clear Очистить
 				i.fa.fa-chevron-up.work-up.arrow
